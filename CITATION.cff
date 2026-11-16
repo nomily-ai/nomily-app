@@ -4,7 +4,7 @@ type: software
 title: "Nomily AI"
 version: "0.1.0"
 date-released: 2026-10-30
-url: "https://github.com/Nomily-Ai/nomily-app"
-repository-code: "https://github.com/Nomily-Ai/nomily-app"
+url: "https://github.com/nomily-ai/nomily-app"
+repository-code: "https://github.com/nomily-ai/nomily-app"
 authors:
   - name: "Nomily AI"

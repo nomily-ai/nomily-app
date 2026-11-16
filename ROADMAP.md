@@ -36,7 +36,7 @@ and documented.
 
 ## Participate
 
-Use [GitHub Discussions](https://github.com/Nomily-Ai/nomily-app/discussions)
+Use [GitHub Discussions](https://github.com/nomily-ai/nomily-app/discussions)
 for ideas and workflow questions, or [Discord](https://discord.gg/uQFj3Rfv54)
 for community conversation. For a reproducible defect, use the Issue templates
 in the affected native-client repository.

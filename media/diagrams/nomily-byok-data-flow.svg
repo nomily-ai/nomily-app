@@ -1,33 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1000 450" role="img" aria-labelledby="title desc">
-  <title id="title">Nomily BYOK data flow</title>
-  <desc id="desc">Recording inputs enter the Nomily native client. Audio is sent only to the transcription provider selected by the user, and transcript text is sent only to the selected AI provider when summary features are used.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="896" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Nomily BYOK data and storage flow</title>
+  <desc id="desc">Recording inputs enter the Nomily native client. Audio is sent to the transcription provider selected by the user, transcript text is sent to the selected AI provider for summaries, and recordings, transcripts, and exports can be saved or synced to the user's iCloud Drive, NAS, or Nextcloud storage.</desc>
   <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffdfd"/><stop offset=".52" stop-color="#f8f9ff"/><stop offset="1" stop-color="#fff8fa"/></linearGradient>
+    <radialGradient id="glow" cx="50%" cy="48%" r="56%"><stop offset="0" stop-color="#ff3155" stop-opacity=".12"/><stop offset="1" stop-color="#ff3155" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#18202d" flood-opacity=".10"/></filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#18202d" flood-opacity=".08"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8c96a7"/></marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#e4002b"/></marker>
     <style>
-      .title{font:700 30px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#111318}.label{font:700 16px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#111318}.small{font:500 13px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#59616d}.note{font:600 12px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#59616d}.arrow{stroke:#8c949f;stroke-width:2;fill:none;marker-end:url(#arrow)}
+      .eyebrow{font-family:Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.8px;fill:#e4002b}.title{font-family:Arial,sans-serif;font-size:25px;font-weight:700;fill:#141821}.subtitle{font-family:Arial,sans-serif;font-size:13px;font-weight:500;fill:#646d7d}.label{font-family:Arial,sans-serif;font-size:15px;font-weight:700;fill:#171b24}.small{font-family:Arial,sans-serif;font-size:12px;font-weight:500;fill:#667080}.tiny{font-family:Arial,sans-serif;font-size:10px;font-weight:600;fill:#667080}.whiteLabel{font-family:Arial,sans-serif;font-size:16px;font-weight:700;fill:#fff}.whiteSmall{font-family:Arial,sans-serif;font-size:11px;font-weight:500;fill:#d9dfe9}.flow{stroke:#8c96a7;stroke-width:2;fill:none;marker-end:url(#arrow)}.flowRed{stroke:#e4002b;stroke-width:2.2;fill:none;marker-end:url(#arrowRed)}.flowDash{stroke:#9da6b5;stroke-width:2;stroke-dasharray:6 6;fill:none;marker-end:url(#arrow)}
     </style>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8c949f"/></marker>
   </defs>
-  <rect width="1000" height="450" rx="24" fill="#fbfbfc"/>
-  <text x="48" y="64" class="title">Nomily BYOK data flow</text>
-  <text x="48" y="91" class="small">Your recording source. Your configured providers. Your workflow.</text>
-  <rect x="48" y="145" width="205" height="126" rx="16" fill="#fff" stroke="#dfe3e8"/>
-  <text x="72" y="181" class="label">Recording inputs</text>
-  <text x="72" y="211" class="small">V05E recorder</text>
-  <text x="72" y="235" class="small">Apple Watch on iOS</text>
-  <text x="72" y="259" class="small">iPhone audio import</text>
-  <rect x="367" y="145" width="220" height="126" rx="16" fill="#111318"/>
-  <text x="391" y="185" font-family="system-ui,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,sans-serif" font-size="20" font-weight="700" fill="#fff">Nomily native client</text>
-  <text x="391" y="216" font-family="system-ui,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,sans-serif" font-size="13" fill="#cbd1d8">Local library · playback</text>
-  <text x="391" y="240" font-family="system-ui,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,sans-serif" font-size="13" fill="#cbd1d8">transfer · workflow controls</text>
-  <rect x="701" y="118" width="251" height="104" rx="16" fill="#fff" stroke="#e4002b" stroke-width="2"/>
-  <text x="725" y="154" class="label">ASR provider you configure</text>
-  <text x="725" y="181" class="small">Audio when transcription runs</text>
-  <rect x="701" y="254" width="251" height="104" rx="16" fill="#fff" stroke="#e4002b" stroke-width="2"/>
-  <text x="725" y="290" class="label">AI provider you configure</text>
-  <text x="725" y="317" class="small">Transcript text for summary features</text>
-  <path d="M253 208 H358" class="arrow"/>
-  <path d="M587 188 C638 188,648 170,690 170" class="arrow"/>
-  <path d="M587 235 C638 235,648 306,690 306" class="arrow"/>
-  <rect x="48" y="390" width="904" height="28" rx="8" fill="#f1f3f5"/>
-  <text x="64" y="409" class="note">Provider availability, retention, pricing, and data handling are governed by the provider and account you choose.</text>
+  <rect width="1000" height="560" rx="28" fill="url(#surface)"/>
+  <rect width="1000" height="560" rx="28" fill="url(#glow)"/>
+  <path d="M0 410 C180 350 295 500 485 436 S786 344 1000 426 V560 H0Z" fill="#e4002b" opacity=".025"/>
+  <text x="48" y="48" class="eyebrow">YOUR DATA PATH</text>
+  <text x="48" y="82" class="title">Nomily BYOK data flow</text>
+  <text x="48" y="108" class="subtitle">Your recording source. Your configured providers. Your chosen storage.</text>
+  <g filter="url(#softShadow)">
+    <rect x="48" y="160" width="194" height="138" rx="18" fill="#fff" stroke="#e0e5ed"/>
+    <circle cx="76" cy="190" r="13" fill="#fff0f2"/>
+    <path d="M72 185h8v10h-8zM70 188h2v4h-2zM80 188h2v4h-2zM73 182h6" fill="none" stroke="#e4002b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="98" y="195" class="label">Recording inputs</text>
+    <text x="72" y="231" class="small">Vobot V05E recorder</text><text x="72" y="255" class="small">Apple Watch microphone</text><text x="72" y="279" class="small">Audio files imported on iPhone</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="330" y="153" width="242" height="153" rx="20" fill="#151922"/>
+    <rect x="354" y="178" width="35" height="35" rx="10" fill="#e4002b"/>
+    <path d="M366 185v14M361 190v4M371 190v4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="405" y="190" class="whiteLabel">Nomily native client</text><text x="354" y="237" class="whiteSmall">Library · playback · workflow</text><text x="354" y="261" class="whiteSmall">Files stay with you</text>
+    <rect x="354" y="275" width="151" height="17" rx="8.5" fill="#292f3d"/><text x="364" y="287" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#ffb1c0">YOU CONTROL THE DESTINATION</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="662" y="142" width="290" height="102" rx="18" fill="#fff" stroke="#e4002b" stroke-width="2"/>
+    <circle cx="691" cy="174" r="13" fill="#fff0f2"/><path d="M685 174h12M687 170h8M687 178h8M689 166h4M689 182h4" fill="none" stroke="#e4002b" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="716" y="177" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#171b24">ASR provider you configure</text><text x="716" y="207" font-family="Arial,sans-serif" font-size="11" font-weight="500" fill="#667080">Audio only when transcription runs</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="662" y="274" width="290" height="102" rx="18" fill="#fff" stroke="#e4002b" stroke-width="2"/>
+    <circle cx="691" cy="306" r="13" fill="#fff0f2"/><path d="M685 306c0-4 3-7 7-7s7 3 7 7-3 7-7 7h-4l-4 4v-6c1-1 1-3 1-5z" fill="none" stroke="#e4002b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="716" y="309" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#171b24">AI provider you configure</text><text x="716" y="339" font-family="Arial,sans-serif" font-size="11" font-weight="500" fill="#667080">Transcript text for summaries and titles</text>
+  </g>
+  <path d="M242 229 H320" class="flow"/><path d="M572 194 C614 194,620 193,651 193" class="flowRed"/><path d="M662 218 C618 218,614 242,572 242" class="flowDash"/><path d="M572 266 C615 266,619 325,651 325" class="flowRed"/>
+  <text x="590" y="181" class="tiny">AUDIO</text><text x="588" y="237" class="tiny">RESULT</text><text x="590" y="283" class="tiny">TEXT</text>
+  <g filter="url(#softShadow)">
+    <rect x="214" y="395" width="572" height="97" rx="20" fill="#fff" stroke="#dce2eb"/>
+    <circle cx="246" cy="428" r="14" fill="#f1f4f8"/><path d="M239 430c0-4 3-7 7-7 3 0 5 1 6 4 4 0 7 3 7 7 0 4-3 7-7 7h-13c-4 0-7-3-7-7 0-3 1-5 4-6" fill="none" stroke="#536070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="273" y="431" class="label">Your storage (optional)</text><text x="273" y="456" class="small">iCloud Drive · NAS · Nextcloud</text>
+    <rect x="541" y="418" width="218" height="48" rx="12" fill="#fff3f5"/><text x="557" y="438" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#a12036">RECORDINGS · TRANSCRIPTS · EXPORTS</text><text x="557" y="455" class="tiny">Saved or synced through your setup</text>
+  </g>
+  <path d="M451 306 V384" class="flowDash"/><text x="464" y="356" class="tiny">SAVE / SYNC</text>
+  <rect x="48" y="516" width="904" height="24" rx="8" fill="#eef1f5"/><text x="63" y="532" class="tiny">Provider availability, storage behavior, retention, pricing, and data handling depend on the services and accounts you choose.</text>
 </svg>

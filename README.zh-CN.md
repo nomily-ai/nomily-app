@@ -82,6 +82,7 @@ Nomily AI 不是托管转录账户或共享录音云。API Key 由用户提供�
 | Azure Speech | 选择 Azure 时用于转录的音频 | 你的 Azure 账户与 Key。 |
 | 本地 ASR 端点 | 选择本地端点时用于转录的音频 | 由你运行该端点。 |
 | LLM 服务商 | 用于摘要、标题或翻译所需的转录文本 | 你选择的服务商、模型、端点与 Key。 |
+| 你的存储（可选） | 你选择保存或同步的录音、转录文本与导出文件 | 你的 iCloud Drive、NAS、Nextcloud 或其他存储配置。 |
 
 公开仓库不包含共享 Nomily AI 云、内置服务商账户或完整自托管同步栈。本地 ASR 与 Ollama 是服务商集成，不代表整个产品均可自托管。
 
@@ -104,11 +105,16 @@ Azure Speech 或         你的 LLM 服务商
         └─────────┬──────────┘
                   ▼
              转录文本与摘要
+                  │ 可选保存 / 同步
+                  ▼
+ iCloud Drive / NAS / Nextcloud / 你的存储
 ```
 
 <p align="center">
-  <img src="media/diagrams/nomily-byok-data-flow.svg" width="900" alt="Nomily AI BYOK 数据流，展示用户配置的 ASR 与 AI 服务商">
+  <img src="media/diagrams/nomily-byok-data-flow.svg" width="900" alt="Nomily AI BYOK 数据流，展示用户配置的 ASR、AI 服务商和可选的 iCloud Drive、NAS 或 Nextcloud 存储">
 </p>
+
+可选存储仍由你控制：可使用你自己的 iCloud Drive、NAS、Nextcloud 或其他存储配置，保存或同步录音、转录文本与导出文件。
 
 ## 高级：在自己的局域网运行 ASR 与大模型
 
@@ -119,7 +125,7 @@ Azure Speech 或         你的 LLM 服务商
 仓库内的参考服务实现了 App 所需的 Local ASR Server 协议：实时音频使用 WebSocket `12300`，完整录音文件使用 HTTP `12301`。它需要 Python 3.10+ 与 `ffmpeg`（macOS：`brew install ffmpeg`；Ubuntu/Debian：`sudo apt install ffmpeg python3-venv`）。
 
 ```bash
-git clone https://github.com/Nomily-Ai/nomily-app.git
+git clone https://github.com/nomily-ai/nomily-app.git
 cd nomily-app/examples/local-asr-server
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r nomily_local_asr/requirements.txt
@@ -261,4 +267,4 @@ nomily-site/      私有静态部署源码，用于指南与演示
 
 ## Star 历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Nomily-Ai/nomily-app&type=date&legend=top-left)](https://www.star-history.com/#Nomily-Ai/nomily-app&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=nomily-ai/nomily-app&type=date&legend=top-left)](https://www.star-history.com/#nomily-ai/nomily-app&type=date&legend=top-left)

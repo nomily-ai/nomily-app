@@ -6,7 +6,7 @@ transcription account or a shared recording cloud.
 
 ## Start here
 
-- Project README: https://github.com/Nomily-Ai/nomily-app/blob/main/README.md
+- Project README: https://github.com/nomily-ai/nomily-app/blob/main/README.md
 - Setup guide and fixed-data demo: https://geekis.com
 - Community: https://discord.gg/uQFj3Rfv54
 
@@ -16,10 +16,10 @@ transcription account or a shared recording cloud.
   media, and the local ASR reference service.
 - iPhone and Apple Watch source: https://github.com/Nomily-Ai/nomily-ios
 - Android source: https://github.com/Nomily-Ai/nomily-android
-- Local ASR reference service: https://github.com/Nomily-Ai/nomily-app/tree/main/examples/local-asr-server
-- Agent contribution guide: https://github.com/Nomily-Ai/nomily-app/blob/main/AGENTS.md
-- Architecture and integration boundary: https://github.com/Nomily-Ai/nomily-app/blob/main/ARCHITECTURE.md
-- Public roadmap: https://github.com/Nomily-Ai/nomily-app/blob/main/ROADMAP.md
+- Local ASR reference service: https://github.com/nomily-ai/nomily-app/tree/main/examples/local-asr-server
+- Agent contribution guide: https://github.com/nomily-ai/nomily-app/blob/main/AGENTS.md
+- Architecture and integration boundary: https://github.com/nomily-ai/nomily-app/blob/main/ARCHITECTURE.md
+- Public roadmap: https://github.com/nomily-ai/nomily-app/blob/main/ROADMAP.md
 
 ## Capabilities and boundaries
 

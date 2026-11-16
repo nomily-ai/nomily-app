@@ -104,6 +104,7 @@ paid separately under the selected provider's pricing.
 | Azure Speech | Audio for transcription, when Azure is selected | Your Azure account and key. |
 | Local ASR endpoint | Audio for transcription, when a local endpoint is selected | You operate the endpoint. |
 | LLM provider | Transcript text needed for summary, title, or translation | Your selected provider, model, endpoint, and key. |
+| Your storage (optional) | Recordings, transcripts, and exports that you choose to save or sync | Your iCloud Drive, NAS, Nextcloud, or other storage setup. |
 
 The public repositories do not include a shared Nomily AI cloud, a bundled provider
 account, or a complete self-hosted sync stack. Local ASR and Ollama are
@@ -128,11 +129,17 @@ Azure is selected      OpenRouter · Ollama · compatible endpoint
         └─────────┬──────────┘
                   ▼
          Transcript and summary
+                  │ optional save / sync
+                  ▼
+ iCloud Drive / NAS / Nextcloud / your storage
 ```
 
 <p align="center">
-  <img src="media/diagrams/nomily-byok-data-flow.svg" width="900" alt="Nomily AI BYOK data flow showing user-configured ASR and AI providers">
+  <img src="media/diagrams/nomily-byok-data-flow.svg" width="900" alt="Nomily AI BYOK data flow showing user-configured ASR, AI providers, and optional iCloud Drive, NAS, or Nextcloud storage">
 </p>
+
+Optional storage remains under your control: save or sync recordings, transcripts,
+and exports with your own iCloud Drive, NAS, Nextcloud, or other storage setup.
 
 ## Advanced: run ASR and an LLM on your own network
 
@@ -148,7 +155,7 @@ It needs Python 3.10+ and `ffmpeg` (`brew install ffmpeg` on macOS, or
 `sudo apt install ffmpeg python3-venv` on Ubuntu/Debian).
 
 ```bash
-git clone https://github.com/Nomily-Ai/nomily-app.git
+git clone https://github.com/nomily-ai/nomily-app.git
 cd nomily-app/examples/local-asr-server
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r nomily_local_asr/requirements.txt
@@ -317,4 +324,4 @@ to [SECURITY.md](SECURITY.md), never in a public issue.
 
 ## Star history
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Nomily-Ai/nomily-app&type=date&legend=top-left)](https://www.star-history.com/#Nomily-Ai/nomily-app&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=nomily-ai/nomily-app&type=date&legend=top-left)](https://www.star-history.com/#nomily-ai/nomily-app&type=date&legend=top-left)
