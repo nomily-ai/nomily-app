@@ -3,10 +3,6 @@
 > **錄音裝置 → Nomily AI → 你的 API Key → 你的 AI**
 
 <p align="center">
-  <img src="media/nomily-workflow-banner.png" width="100%" alt="Nomily AI BYOK 語音錄製流程：從錄音裝置到轉錄、摘要與 AI 服務商">
-</p>
-
-<p align="center">
   <a href="https://geekis.com/">
     <img src="media/nomily-readme-demo.gif" width="100%" alt="Nomily AI 工作流程：錄音、整理、轉錄、摘要與互動示範">
   </a>

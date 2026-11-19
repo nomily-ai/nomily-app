@@ -3,10 +3,6 @@
 > **Recorder → Nomily AI → Your API Key → Your AI**
 
 <p align="center">
-  <img src="media/nomily-workflow-banner.png" width="100%" alt="Nomily AI BYOK voice recording workflow from recorder to transcript, summary, and AI provider">
-</p>
-
-<p align="center">
   <a href="https://geekis.com/">
     <img src="media/nomily-readme-demo.gif" width="100%" alt="Nomily AI workflow: record, organize, transcribe, summarize, and explore the interactive demo">
   </a>
