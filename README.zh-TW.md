@@ -7,6 +7,16 @@
 </p>
 
 <p align="center">
+  <a href="https://geekis.com/">
+    <img src="media/nomily-readme-demo.gif" width="100%" alt="Nomily AI 工作流程：錄音、整理、轉錄、摘要與互動示範">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://geekis.com/">探索互動示範 →</a>
+</p>
+
+<p align="center">
   <a href="https://github.com/Nomily-Ai/nomily-ios"><img src="https://img.shields.io/badge/iOS%20%2B%20Apple%20Watch-SwiftUI-111318?style=for-the-badge&logo=swift&logoColor=white" alt="iOS 與 Apple Watch 用戶端"></a>
   <a href="https://github.com/Nomily-Ai/nomily-android"><img src="https://img.shields.io/badge/Android-Jetpack%20Compose-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 用戶端"></a>
   <a href="https://geekis.com"><img src="https://img.shields.io/badge/BYOK-Your%20Key%20Your%20AI-E4002B?style=for-the-badge" alt="自帶金鑰"></a>

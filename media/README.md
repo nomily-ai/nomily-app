@@ -21,6 +21,11 @@ installation status.
 list with Nomily AI ready to install. It is an installation guide image, not a
 claim that every listed third-party app is associated with Nomily.
 
+`nomily-readme-demo.gif` is a 6.2-second, silent README workflow preview made
+from approved Nomily product visuals. It shows recording, the library,
+transcription, summary and mind-map results, and links readers to the public
+interactive demo.
+
 App screenshots must use synthetic or non-sensitive data. Do not add images containing API keys, Wi-Fi credentials, device serial numbers, Bluetooth MAC addresses, peripheral UUIDs, recordings, transcripts, account details, or private infrastructure.
 
 ## Curated public collection
